@@ -23,11 +23,16 @@ login() {
 
 
 /*
-Firebase test code
-{
-  "rules": {
-    ".read": "now < 1608501600000",  // 2020-12-21
-    ".write": "now < 1608501600000",  // 2020-12-21
+Firebase Cloud Firestore code
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if
+          request.time < timestamp.date(2020, 12, 21);
+    }
   }
 }
+
 */
