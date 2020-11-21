@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "41497973450",
+    "firebase_url": "https://group-order-2651c.firebaseio.com",
+    "project_id": "group-order-2651c",
+    "storage_bucket": "group-order-2651c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41497973450:android:90081c33455049287b5a33",
+        "android_client_info": {
+          "package_name": "WilhelMiina.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41497973450-1f1gvvga989d4j3p5tsn8ree5fqs3k1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtcRbVMIO4UFWY3TgdQH2helPIicRtNoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41497973450-1f1gvvga989d4j3p5tsn8ree5fqs3k1g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "41497973450-g93j6ih9l1biroqq06mcrs7k2liqr8jc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Wilhelmiina"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
