@@ -19,3 +19,15 @@ login() {
   this.userService.login(this.username, this.password);
 }
 }
+
+
+
+/*
+Firebase test code
+{
+  "rules": {
+    ".read": "now < 1608501600000",  // 2020-12-21
+    ".write": "now < 1608501600000",  // 2020-12-21
+  }
+}
+*/
