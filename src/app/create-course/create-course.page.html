@@ -1,3 +1,4 @@
+<!--
 <ion-header>
   <ion-toolbar class="ios hydrated">
     <ion-title class="ios title-ios hydrated">Course</ion-title>
@@ -26,3 +27,39 @@
     </form>
   </ion-list>
 </ion-content>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Courses
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+-->
+
+<ion-content>
+  <ion-list class="ios list-ios hydrated">
+    <ion-list-header class="ios hydrated">
+      Courses
+    </ion-list-header>
+
+    <ion-item *ngFor="let course of Courses" class="user-list">
+      <ion-label>
+        <h5>
+          <ion-icon name="key"></ion-icon> {{course.name}}
+        </h5>
+        <p>
+          <ion-icon name="book"></ion-icon> {{course.mobile}}
+        </p>
+      </ion-label>
+
+      <div class="item-note" item-end>
+        <button ion-button clear [routerLink]="['/edit-appointment/', course.$key]">
+          <ion-icon name="create" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button clear (click)="deleteCourse(course.$key)">
+          <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+        </button>
+      </div>
+    </ion-item>
+  </ion-list>
