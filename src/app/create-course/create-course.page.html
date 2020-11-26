@@ -29,9 +29,9 @@
 </ion-content>
 
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar>    
     <ion-title>
-      Courses
+      WilhelMiina
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -43,7 +43,7 @@
       Courses
     </ion-list-header>
 
-    <ion-item *ngFor="let course of Courses" class="user-list">
+    <ion-item *ngFor="let course of course" class="user-list">
       <ion-label>
         <h5>
           <ion-icon name="key"></ion-icon> {{course.name}}
@@ -54,7 +54,7 @@
       </ion-label>
 
       <div class="item-note" item-end>
-        <button ion-button clear [routerLink]="['/edit-appointment/', course.$key]">
+        <button ion-button clear [routerLink]="['/edit-cart/', course.$key]">
           <ion-icon name="create" style="zoom:2.0"></ion-icon>
         </button>
         <button ion-button clear (click)="deleteCourse(course.$key)">
@@ -63,3 +63,5 @@
       </div>
     </ion-item>
   </ion-list>
+
+  

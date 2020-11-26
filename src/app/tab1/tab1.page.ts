@@ -10,7 +10,7 @@ import { CourseService } from './../shared/course.service';
 export class Tab1Page implements OnInit {
 
 
-  Courses = [];
+  courses = [];
 
   constructor(
     private courseService: CourseService
@@ -20,12 +20,12 @@ export class Tab1Page implements OnInit {
     this.fetchCourses();
     const courseRes = this.courseService.getCourseList();
     courseRes.snapshotChanges().subscribe(res => {
-      this.Courses = [];
+      this.courses = [];
       res.forEach(item => {
         const a = item.payload.toJSON();
         // tslint:disable-next-line: no-string-literal
         a['$key'] = item.key;
-        this.Courses.push(a as Course);
+        this.courses.push(a as Course);
       });
     });
   }

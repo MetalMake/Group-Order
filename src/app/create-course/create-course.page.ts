@@ -10,32 +10,31 @@ import { CourseService } from './../shared/course.service';
 })
 export class CreateCoursePage implements OnInit {
 
-  bookingForm: FormGroup;
+  courseForm: FormGroup;
 
   constructor(
-    private aptService: CourseService,
+    private courseService: CourseService,
     private router: Router,
     public fb: FormBuilder
   ) { }
 
   ngOnInit() {
-    this.bookingForm = this.fb.group({
-      name: [''],
-      email: [''],
-      mobile: ['']
-    })
+    this.courseForm = this.fb.group({
+      courseId: [''],
+      name: ['']
+    });
   }
 
   formSubmit() {
-    if (!this.bookingForm.valid) {
+    if (!this.courseForm.valid) {
       return false;
     } else {
-      this.aptService.createCourse(this.bookingForm.value).then(res => {
-        console.log(res)
-        this.bookingForm.reset();
-        this.router.navigate(['/home']);
+      this.courseService.createCourse(this.courseForm.value).then(res => {
+        console.log(res);
+        this.courseForm.reset();
+        this.router.navigate(['/tab1']);
       })
-        .catch(error => console.log(error));
+        .catch((error => console.log(error)));
     }
   }
 }

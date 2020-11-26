@@ -15,10 +15,11 @@ export class CourseService {
   constructor(private db: AngularFireDatabase) { }
 
   // Create
-  createCourse(apt: Course) {
+  createCourse(course: Course) {
     return this.courseListRef.push({
-      name: apt.name,
-      cart: apt.cart
+      $key: course.$key,
+      name: course.name,
+      cart: course.cart
     });
   }
 
@@ -35,10 +36,10 @@ export class CourseService {
   }
 
   // Update
-  updateCourse(id, apt: Course) {
+  updateCourse(id, course: Course) {
     return this.courseRef.update({
-      name: apt.name,
-      cart: apt.cart
+      name: course.name,
+      cart: course.cart
     });
   }
 
