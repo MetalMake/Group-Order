@@ -36,7 +36,7 @@ export class CourseService {
   }
 
   // Update
-  updateCourse(id, course: Course) {
+  updateCourse(id: string, course: Course) {
     return this.courseRef.update({
       name: course.name,
       cart: course.cart
