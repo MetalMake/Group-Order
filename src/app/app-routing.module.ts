@@ -9,7 +9,19 @@ const routes: Routes = [
   {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },  {
+    path: 'mathematics',
+    loadChildren: () => import('./mathematics/mathematics.module').then( m => m.MathematicsPageModule)
   },
+  {
+    path: 'finnish',
+    loadChildren: () => import('./finnish/finnish.module').then( m => m.FinnishPageModule)
+  },
+  {
+    path: 'biology',
+    loadChildren: () => import('./biology/biology.module').then( m => m.BiologyPageModule)
+  },
+
  /*  {
     path: 'about',
     loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
