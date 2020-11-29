@@ -27,9 +27,12 @@ const routes: Routes = [
       {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> main
 =======
+=======
+>>>>>>> parent of a5f3678... tab4 sekoilu jatku
 =======
 >>>>>>> parent of a5f3678... tab4 sekoilu jatku
         path: 'create-course',
@@ -37,6 +40,9 @@ const routes: Routes = [
       },
       {
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a5f3678... tab4 sekoilu jatku
+=======
 >>>>>>> parent of a5f3678... tab4 sekoilu jatku
 =======
 >>>>>>> parent of a5f3678... tab4 sekoilu jatku
