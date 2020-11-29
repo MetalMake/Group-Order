@@ -20,38 +20,10 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
-<<<<<<< HEAD
         path: 'tab4',
         loadChildren: () => import('../tab4/tab4.module').then(m => m.Tab4PageModule)
       },
       {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> main
-=======
-=======
->>>>>>> parent of a5f3678... tab4 sekoilu jatku
-=======
->>>>>>> parent of a5f3678... tab4 sekoilu jatku
-=======
->>>>>>> parent of a5f3678... tab4 sekoilu jatku
-        path: 'create-course',
-        loadChildren: () => import('../create-course/create-course.module').then(m => m.CreateCoursePageModule)
-      },
-      {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of a5f3678... tab4 sekoilu jatku
-=======
->>>>>>> parent of a5f3678... tab4 sekoilu jatku
-=======
->>>>>>> parent of a5f3678... tab4 sekoilu jatku
-=======
->>>>>>> parent of a5f3678... tab4 sekoilu jatku
         path: '',
         redirectTo: 'tabs/tab1',
         pathMatch: 'full'
