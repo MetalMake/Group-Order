@@ -26,13 +26,19 @@ const routes: Routes = [
       },
       {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> main
 =======
+=======
+>>>>>>> parent of a5f3678... tab4 sekoilu jatku
         path: 'create-course',
         loadChildren: () => import('../create-course/create-course.module').then(m => m.CreateCoursePageModule)
       },
       {
+<<<<<<< HEAD
+>>>>>>> parent of a5f3678... tab4 sekoilu jatku
+=======
 >>>>>>> parent of a5f3678... tab4 sekoilu jatku
         path: '',
         redirectTo: 'tabs/tab1',

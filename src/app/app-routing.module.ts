@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -26,6 +27,8 @@ const routes: Routes = [
   },
   {
 =======
+=======
+>>>>>>> parent of a5f3678... tab4 sekoilu jatku
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -50,6 +53,9 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },  {
+<<<<<<< HEAD
+>>>>>>> parent of a5f3678... tab4 sekoilu jatku
+=======
 >>>>>>> parent of a5f3678... tab4 sekoilu jatku
     path: 'create-course',
     loadChildren: () => import('./create-course/create-course.module').then( m => m.CreateCoursePageModule)
@@ -63,6 +69,7 @@ const routes: Routes = [
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
   },
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -127,6 +134,9 @@ const routes: Routes = [
 =======
 
 >>>>>>> parent of a5f3678... tab4 sekoilu jatku
+=======
+
+>>>>>>> parent of a5f3678... tab4 sekoilu jatku
 
 
 
@@ -139,6 +149,9 @@ const routes: Routes = [
 })
 export class AppRoutingModule {}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> parent of a5f3678... tab4 sekoilu jatku
 =======
 >>>>>>> parent of a5f3678... tab4 sekoilu jatku
