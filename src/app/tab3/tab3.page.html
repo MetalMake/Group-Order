@@ -35,6 +35,10 @@
     
     <ion-content fullscreen>
       <ion-card>
+        <ion-card-header>
+          <ion-searchbar showCancelButton= "focus"></ion-searchbar>
+        </ion-card-header>
+        <ion-card-content>
         <ion-grid>
           <ion-row justify-content-center>
             <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
@@ -45,30 +49,36 @@
                   <ion-input type="text" placeholder="Write message"></ion-input>
                 </ion-item>
                 <div padding>
-                  <ion-button size="large" href="/touchid" expand="block" routerLinkActive="tab-selected" routerLink="/tab4" class="ios" tab="tab4">
+                  <!--<ion-button size="large" href="/touchid" expand="block" routerLinkActive="tab-selected" routerLink="/tab4" class="ios" tab="tab4">
                     <ion-label>Send mail</ion-label>
-                  </ion-button>
-                 
+                  </ion-button>-->
+                  <ion-tab-button routerLinkActive="tab-selected" routerLink="/courses" class="ios" tab="tab4">
+                    <ion-icon name="send"></ion-icon>
+                    <ion-label>Send mail</ion-label>
+                  </ion-tab-button>
                 </div>
                 <ion-item>
                   <ion-input type="password" placeholder="1 message pending..."></ion-input>
                 </ion-item>
                 <div padding>
-                  <ion-button size="large" href="/touchid" expand="block" routerLink="tabs">Receive</ion-button>
+                  <!--<ion-button size="large" href="/touchid" expand="block" routerLink="tabs">Receive</ion-button>-->
+                  <ion-tab-button routerLinkActive="tab-selected" routerLink="/courses" class="ios" tab="tab4">
+                    <ion-icon name="mail"></ion-icon>
+                    <ion-label>mailbox</ion-label>
+                  </ion-tab-button>
                 </div>
+                
+
               </div>
         
             
             </ion-col>
           </ion-row>
         </ion-grid>
+      </ion-card-content>
         
-        <ion-card-header>
-          
-        </ion-card-header>
-        <ion-card-content>
-          
-        </ion-card-content>
+       
+
       </ion-card>
     </ion-content>
   </ion-app>

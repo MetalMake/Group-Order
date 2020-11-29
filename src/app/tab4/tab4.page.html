@@ -1,14 +1,32 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>tab4</ion-title>
+   
+    <ion-buttons slot="start">
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-menu-toggle>
+    </ion-buttons> 
+   
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<body>
+<ion-app>
+  <ion-content fullscreen>
+    <ion-card>
+      <ion-card-header>
+        <ion-searchbar showCancelButton= "focus"></ion-searchbar>
+      <ion-card-title>Contact Us!</ion-card-title>
+    </ion-card-header>
+
+  <ion-card-content>
+    
   <section class="hero is-primary is-bold">
     <div class="hero-body">
     <div class="container">  
-      <h1 class="title">Contact Us!</h1>  
+     
     </div>
     </div>
     </section>
@@ -63,5 +81,8 @@
       </form>
     </div>
     </section>
-
+  </ion-card-content>
+</ion-card>
 </ion-content>
+</ion-app>
+</body>
