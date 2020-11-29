@@ -9,7 +9,16 @@ const routes: Routes = [
   {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },  {
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
     path: 'mathematics',
     loadChildren: () => import('./mathematics/mathematics.module').then( m => m.MathematicsPageModule)
   },
@@ -43,7 +52,7 @@ const routes: Routes = [
     loadChildren: () => import('./edit-cart/edit-cart.module').then( m => m.EditCartPageModule)
   }, */
 
- 
+
 
 
 
