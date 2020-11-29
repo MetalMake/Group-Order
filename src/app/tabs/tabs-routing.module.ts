@@ -24,6 +24,18 @@ const routes: Routes = [
         loadChildren: () => import('../tab4/tab4.module').then(m => m.Tab4PageModule)
       },
       {
+        path: 'mathematics',
+        loadChildren: () => import('../mathematics/mathematics.module').then(m => m.MathematicsPageModule)
+      },
+      {
+        path: 'biology',
+        loadChildren: () => import('../biology/biology.module').then(m => m.BiologyPageModule)
+      },
+      {
+        path: 'finnish',
+        loadChildren: () => import('../finnish/finnish.module').then(m => m.FinnishPageModule)
+      },
+      {
 
         path: '',
         redirectTo: 'tabs/tab1',
