@@ -9,7 +9,8 @@ const routes: Routes = [
   {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },  {
+  },
+  {
     path: 'mathematics',
     loadChildren: () => import('./mathematics/mathematics.module').then( m => m.MathematicsPageModule)
   },
@@ -43,7 +44,7 @@ const routes: Routes = [
     loadChildren: () => import('./edit-cart/edit-cart.module').then( m => m.EditCartPageModule)
   }, */
 
- 
+
 
 
 
