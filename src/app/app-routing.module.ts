@@ -29,7 +29,11 @@ const routes: Routes = [
   {
     path: 'biology',
     loadChildren: () => import('./biology/biology.module').then( m => m.BiologyPageModule)
+  },  {
+    path: 'tab4',
+    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
   },
+
 
  /*  {
     path: 'about',

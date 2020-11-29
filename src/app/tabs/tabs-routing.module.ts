@@ -20,8 +20,8 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
-        path: 'create-course',
-        loadChildren: () => import('../create-course/create-course.module').then(m => m.CreateCoursePageModule)
+        path: 'tab4',
+        loadChildren: () => import('../tab4/tab4.module').then(m => m.Tab4PageModule)
       },
       {
 
