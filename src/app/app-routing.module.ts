@@ -10,27 +10,28 @@ const routes: Routes = [
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
-  {
+ /*  {
     path: 'about',
     loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
   },
-  {
+
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
-  },  {
+  },
+  {
     path: 'create-course',
     loadChildren: () => import('./create-course/create-course.module').then( m => m.CreateCoursePageModule)
   },
   {
     path: 'edit-cart',
     loadChildren: () => import('./edit-cart/edit-cart.module').then( m => m.EditCartPageModule)
-  },
+  }, */
 
-
+ 
 
 
 
