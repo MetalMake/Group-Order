@@ -1,0 +1,90 @@
+<!--trying to push-->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Mail</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-menu-toggle>
+    </ion-buttons> 
+   
+  </ion-toolbar>
+</ion-header>
+
+<body>
+<ion-app>
+  <ion-content fullscreen>
+    <ion-card>
+      <ion-card-header>
+        <ion-searchbar showCancelButton= "focus"></ion-searchbar>
+      <ion-card-title>Contact Us!</ion-card-title>
+    </ion-card-header>
+
+  <ion-card-content>
+    
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+    <div class="container">  
+     
+    </div>
+    </div>
+    </section>
+    <section class="section">
+    <div class="container">
+      <!-- form goes here -->
+      <form (ngSubmit)="processForm()">
+        <!-- name -->
+        <div class="field">
+          <input 
+            type="text" 
+            name="name" 
+            class="input" 
+            placeholder="Your Name" 
+            [(ngModel)]="name"
+            required
+            minlength="3"
+            #nameInput="ngModel">
+          <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
+            Name is required and needs to be at least 3 characters long.
+          </div>
+        </div>
+        <!-- email -->
+        <div class="field">          
+          <input 
+            type="email" 
+            name="email" 
+            class="input" 
+            placeholder="Your Email" 
+            [(ngModel)]="email"
+            required
+            email
+            #emailInput="ngModel">
+          <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+            Needs to be a valid email.
+          </div>
+        </div>
+        <!-- message -->
+        <div class="field">
+          <textarea 
+            class="textarea" 
+            name="message" 
+            placeholder="What's on your mind?" 
+            [(ngModel)]="message"
+            required
+            #messageInput="ngModel"></textarea>
+            <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+              Your message is required!
+            </div>
+        </div>
+        <button type="submit" class="button is-danger is-large">Submit</button>
+      </form>
+    </div>
+    </section>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+</ion-app>
+</body>
+
