@@ -25,8 +25,15 @@ const routes: Routes = [
         loadChildren: () => import('../tab4/tab4.module').then(m => m.Tab4PageModule)
       },
       {
+<<<<<<< HEAD
 =======
 >>>>>>> main
+=======
+        path: 'create-course',
+        loadChildren: () => import('../create-course/create-course.module').then(m => m.CreateCoursePageModule)
+      },
+      {
+>>>>>>> parent of a5f3678... tab4 sekoilu jatku
         path: '',
         redirectTo: 'tabs/tab1',
         pathMatch: 'full'
